@@ -128,7 +128,7 @@ left join staffs m
 on s.manager_id = m.staff_id;
 	
 -- If a staff no longer works for any stores, the value in the active column is set to zero.
-select * from staffs;
+
 select staff_id, first_name, store_id,
 case
 	when store_id is null then 'Inacitve'
@@ -143,8 +143,7 @@ where store_id is null;
 select * from staffs;
 
 # Categories Table
--- The categories table stores the bike’s categories such as children bicycles, comfort
--- bicycles, and electric bikes.
+-- The categories table stores the bike’s categories such as children bicycles, comfort bicycles, and electric bikes.
 select * from categories;
 
 # Brands Table
